@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Decimal y Sexagesimal</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #333; /* Fondo oscuro */
+            color: #fff; /* Texto claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #reloj {
+            font-size: 3em;
+            background-color: #444; /* Fondo oscuro ligeramente más claro */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div id="reloj"></div>
+    <script>
+        function actualizarReloj() {
+            var tiempoTotal = new Date();
+            var aux = 0.
+            var segundos = tiempoTotal.getSeconds();
+            var minutos = tiempoTotal.getMinutes();
+            var horas = tiempoTotal.getHours();
+            var miliseconds = tiempoTotal.getMilliseconds();
+            aux += miliseconds / 3600 / 60;
+            aux += segundos / 3600;
+            aux += minutos / 60;
+            aux += horas;
+            aux = aux / Math.PI;
+            aux = aux.toFixed(5)
+            document.getElementById("reloj").textContent = aux + " π" ;
+        }
+
+        setInterval(actualizarReloj, 1000);
+    </script>
+</body>
+</html>
