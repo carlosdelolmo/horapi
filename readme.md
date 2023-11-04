@@ -16,10 +16,9 @@ El reloj está diseñado con un estilo moderno y minimalista. El fondo oscuro cr
 
 El número π (pi) se utiliza como una aproximación para mostrar la hora decimal. La precisión del cálculo puede variar según la capacidad del sistema y el navegador. La representación decimal se redondea a 5 decimales para mantener la legibilidad y el formato del reloj.
 
-¡Esperamos que disfrutes de este reloj decimal y su aproximación utilizando π! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros.
+¡Esperamos que disfrutes de este reloj decimal y su aproximación utilizando π! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto conmigo.
 
 ---
-*Este proyecto ha sido desarrollado como una demostración y puede estar sujeto a mejoras y cambios en el futuro.*
 
 ## Autor
 
